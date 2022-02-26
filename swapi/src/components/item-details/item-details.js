@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import {Consumer} from '../swapi-context';
-import './person-details.css';
+import './item-details.css';
 
 
-const PersonDetails = ({ selectedItemId }) => {
+const ItemDetails = ({ selectedItemId }) => {
   const [data, setData] = useState({})
   const swapi = useContext(Consumer);
 
@@ -40,4 +40,4 @@ const PersonDetails = ({ selectedItemId }) => {
   )
 }
 
-export default PersonDetails;
+export default ItemDetails;
