@@ -1,25 +1,25 @@
-import React, { useState, useEffect, useContext } from 'react';
-import {Consumer} from '../swapi-context';
+import React, { useState, useEffect } from 'react';
+import withSwapi from '../hoc';
 import './item-list.css';
 
 
-const ItemList = ({ setSelectedItemId }) => {
+const ItemList = ({ setSelectedItemId, getData }) => {
   const [data, setData] = useState([]);
-  const swapi = useContext(Consumer)
 
   useEffect(() => {
-    swapi.getAllPeople()
+    getData()
       .then(data => setData(data))
       .catch(error => error)
   }, [])
 
-  const elements = data.map((person) => {
+  const elements = data.map((item) => {
     return (<li
-      key={person.id}
+      key={item.id}
       className="list-group-item"
-      onClick={() => setSelectedItemId(person.id)}
+      onClick={() => setSelectedItemId(item.id)}
     >
-    {person.name}
+      {/* {children(person)} */}
+      {item.name}
     </li>)
   })
 
@@ -28,4 +28,8 @@ const ItemList = ({ setSelectedItemId }) => {
   );
 }
 
-export default ItemList;
+const divideFunc = (swapi) => ({
+  getData: swapi.getAllPeople,
+})
+
+export default withSwapi(ItemList, divideFunc)

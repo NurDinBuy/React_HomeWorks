@@ -1,9 +1,10 @@
-import React, {useState, useEffect, useContext} from 'react';
-import {Consumer} from '../swapi-context'
+import React, { useState, useEffect, useContext } from 'react';
+import Loading from '../loading';
+import MyContext from '../swapi-context/context';
+
 import './random-planet.css';
 
 
-const Loader = () => <h1>Loading...</h1>
 const Error = () => <h1>Something went wrong...</h1>
 
 
@@ -12,36 +13,63 @@ const RandomPlanet = () => {
     loading: true,
     error: false,
   })
-  const swapi = useContext(Consumer)
+  const swapi = useContext(MyContext.Consumer)
 
   useEffect(() => {
 
-        const updatePlanet = () => {
-          const id = Math.floor(Math.random() * (20 - 1) + 1);
-          swapi.getPlanet(id).then(planet => {
-            setData({...data, ...planet, loading: false, error: false})
-          }).catch(error => {
-            setData({...data, loading: false, error: true})
-          })
-        }
+    // <MyContext.Consumer>
+    //   {(swapi) => {
+    //     console.log(swapi);
 
-        updatePlanet()
-        const planetInterval = setInterval(() => {
-          updatePlanet()
-        }, 2500)
+    //     const updatePlanet = () => {
+    //       const id = Math.floor(Math.random() * (20 - 1) + 1);
+    //       swapi.getPlanet(id).then(planet => {
+    //         setData({ ...data, ...planet, loading: false, error: false })
+    //       }).catch(error => {
+    //         setData({ ...data, loading: false, error: true })
+    //       })
+    //     }
+    //     updatePlanet()
 
-        return () => clearInterval(planetInterval)
-      }, [])
+    //     const planetInterval = setInterval(() => {
+    //       updatePlanet()
+    //     }, 5000)
 
-  const {id, name, population, rotationPeriod, diameter} = data;
+    //     return () => clearInterval(planetInterval)
+    //   }
+    //   }
+    // </MyContext.Consumer>
+
+
+    // Первоначальный код
+
+    const updatePlanet = () => {
+      const id = Math.floor(Math.random() * (20 - 1) + 1);
+      swapi.getPlanet(id).then(planet => {
+        setData({ ...data, ...planet, loading: false, error: false })
+      }).catch(error => {
+        setData({ ...data, loading: false, error: true })
+      })
+    }
+
+    updatePlanet()
+
+    const planetInterval = setInterval(() => {
+      updatePlanet()
+    }, 5000)
+
+    return () => clearInterval(planetInterval)
+  }, [])
+
+  const { id, name, population, rotationPeriod, diameter } = data;
   const imageUrl = `https://starwars-visualguide.com/assets/img/planets/${id}.jpg`
 
   if (data.loading) {
-      return <Loader />
+    return <Loading />
   }
 
   if (data.error) {
-      return <Error />
+    return <Error />
   }
 
   return (

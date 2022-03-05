@@ -1,43 +1,44 @@
-import React, { useState, useEffect, useContext } from 'react';
-import {Consumer} from '../swapi-context';
+import React, { useState, useEffect } from 'react';
 import './item-details.css';
 
+const Record = ({ label, fieldName, data }) => {
+  return (
+    <li className="list-group-item">
+      <span className="term">{label}</span>
+      <span>{data[fieldName]}</span>
+    </li>
+  )
+}
 
-const ItemDetails = ({ selectedItemId }) => {
+const ItemDetails = ({ selectedItemId, getData, getImage, children }) => {
   const [data, setData] = useState({})
-  const swapi = useContext(Consumer);
 
   useEffect(() => {
-    swapi.getPerson(selectedItemId)
+    getData(selectedItemId)
       .then(data => setData(data))
       .catch(error => error)
   }, [selectedItemId])
 
-  const {id, name, gender, birthYear, eyeColor} = data
-  const imageUrl = `https://starwars-visualguide.com/assets/img/characters/${id}.jpg`
+  const { id, name, gender, birthYear, eyeColor } = data
+  const imageUrl = getImage(id)
 
   return (
-    <div className="person-details card">
-      <img className="person-image" src={imageUrl} />
+    <div className="item-details card">
+      <img className="item-image" src={imageUrl} />
       <div className="card-body">
         <h4>{name}</h4>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">
-            <span className="term">Gender</span>
-            <span>{gender}</span>
-          </li>
-          <li className="list-group-item">
-            <span className="term">Birth Year</span>
-            <span>{birthYear}</span>
-          </li>
-          <li className="list-group-item">
-            <span className="term">Eye Color</span>
-            <span>{eyeColor}</span>
-          </li>
+
+          {
+            React.Children.map(children, (record) => {
+              return React.cloneElement(record, { data: data })
+            })
+          }
+
         </ul>
       </div>
     </div>
   )
 }
 
-export default ItemDetails;
+export { ItemDetails, Record };

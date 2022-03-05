@@ -1,3 +1,3 @@
-import {Provider, Consumer} from './context';
+import { Provider, Consumer } from './context';
 
-export {Provider, Consumer}
+export { Provider, Consumer }

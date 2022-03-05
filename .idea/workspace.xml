@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b3789e8-7ed9-42cb-9b16-d30ac8e6a347" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/swapi/src/components/hoc/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swapi/src/components/hoc/with-swapi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swapi/src/components/sw-components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swapi/src/components/sw-components/item-lists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swapi/src/components/sw-components/person-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/item-details/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/swapi/src/components/item-details/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/item-details/item-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/swapi/src/components/item-details/item-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/item-details/person-details.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/swapi/src/components/item-list/item-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/pages/people-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/swapi/src/components/pages/people-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/row/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/swapi/src/components/row/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swapi/src/components/row/row.js" beforeDir="false" afterPath="$PROJECT_DIR$/swapi/src/components/row/row.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24JmVc3jL44C6Q9OVnM4aLbImby" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../infinityTEAM" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b3789e8-7ed9-42cb-9b16-d30ac8e6a347" name="Changes" comment="" />
+      <created>1643357093320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643357093320</updated>
+      <workItem from="1643357093320" duration="3203000" />
+      <workItem from="1643466286978" duration="2807000" />
+      <workItem from="1643799710007" duration="671000" />
+      <workItem from="1643800449064" duration="974000" />
+      <workItem from="1643801783582" duration="2480000" />
+      <workItem from="1643805091823" duration="926000" />
+      <workItem from="1643812502102" duration="4564000" />
+      <workItem from="1643871491610" duration="24000" />
+      <workItem from="1644070296981" duration="1007000" />
+      <workItem from="1644396186203" duration="1414000" />
+      <workItem from="1644410969527" duration="3215000" />
+      <workItem from="1645279690081" duration="1747000" />
+      <workItem from="1645329840241" duration="47000" />
+      <workItem from="1645607829783" duration="5712000" />
+      <workItem from="1645708973357" duration="19000" />
+      <workItem from="1645776500776" duration="4506000" />
+      <workItem from="1645871688941" duration="4611000" />
+      <workItem from="1645951229347" duration="845000" />
+      <workItem from="1646134183970" duration="8658000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

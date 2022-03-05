@@ -1,0 +1,11 @@
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #041222;
+  border-radius: 5px;
+}
+
+.loadingIcon {
+  width: 200px;
+}
